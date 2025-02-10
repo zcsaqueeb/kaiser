@@ -64,7 +64,7 @@ async function pingAndUpdate(token, extensionId) {
       }
     }
 
-    Upils.logger(`[${new Date().toISOString()}] wait ${Upils.settings.TIME_PING_EACH_ROUND} minute...`);
-    await new Promise((resolve) => setTimeout(resolve, Upils.settings.TIME_PING_EACH_ROUND * 60000));
+    Upils.logger(`[${new Date().toISOString()}] wait 1 minute...`);
+    await new Promise((resolve) => setTimeout(resolve, 1 * 60000));
   }
 })();
